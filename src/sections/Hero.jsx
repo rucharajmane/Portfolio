@@ -5,10 +5,12 @@ import {Suspense} from "react";
 import {CanvasLoader} from "../components/CanvasLoader.jsx";
 import {useMediaQuery} from "react-responsive";
 import {calculateSizes} from "../constants/index.js";
+import Button from "../components/Button.jsx";
 import Target from "../components/Target.jsx";
 import Cube from '../components/Cube.jsx';
 import Rings from '../components/Rings.jsx';
 import ReactLogo from '../components/ReactLogo.jsx';
+import HeroCamera from "../components/HeroCamera.jsx";
 
 const Hero = () => {
 
@@ -32,12 +34,14 @@ const Hero = () => {
 
                         <Suspense fallback={<CanvasLoader/>} >
                             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
-                            <HackerRoom
-                                //scale = {0.07}
-                                position={sizes.deskPosition}
-                                rotation = {[0, -Math.PI, 0]}
-                                scale = {sizes.deskScale}
-                            />
+                            <HeroCamera isMobile={isMobile} >
+                                <HackerRoom
+                                    //scale = {0.07}
+                                    position={sizes.deskPosition}
+                                    rotation = {[0, -Math.PI, 0]}
+                                    scale = {sizes.deskScale}
+                                />
+                            </HeroCamera>
 
                             <group>
                                 <Target position = {sizes.targetPosition} />
@@ -52,6 +56,11 @@ const Hero = () => {
 
 
                     </Canvas>
+                </div>
+                <div className= "absolute bottom-7 left-0 right-0 w-full z-10 c-space" >
+                    <a href="#contact" className="w-fit">
+                        <Button name = "Let's work together" isBeam containerClass= "sm:w-fit w-full sm:min-w-96 " />
+                    </a>
                 </div>
             </div>
         </section>
