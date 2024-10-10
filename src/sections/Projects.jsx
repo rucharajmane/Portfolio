@@ -30,7 +30,7 @@ const Projects = () => {
     const currentProject = myProjects[selectedProjectIndex];
 
     return (
-        <section className="c-space my-20">
+        <section className="c-space my-20" id="projects">
             <p className="head-text">My Selected Work</p>
 
             <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
@@ -40,7 +40,7 @@ const Projects = () => {
                     </div>
 
                     <div className="p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg" style={currentProject.logoStyle}>
-                        <img className="w-10 h-10 shadow-sm" src={currentProject.logo} alt="logo" />
+                        <img className="w-15 h-9 shadow-sm" src={currentProject.logo} alt="logo" />
                     </div>
 
                     <div className="flex flex-col gap-5 text-white-600 my-5">
