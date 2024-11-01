@@ -37,10 +37,10 @@ const About = () => {
                         <img src="/assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
 
                         <div>
-                            <p className="grid-headtext">Tech Stack</p>
+                            <p className="grid-headtext">My Passion for Coding</p>
                             <p className="grid-subtext">
-                                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-                                applications
+                                I love solving problems and building things through code. Programming isn&apos;t just my
+                                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
                             </p>
                         </div>
                     </div>
@@ -74,10 +74,10 @@ const About = () => {
                         <img src="/assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
 
                         <div>
-                            <p className="grid-headtext">My Passion for Coding</p>
+                            <p className="grid-headtext">Tech Stack</p>
                             <p className="grid-subtext">
-                                I love solving problems and building things through code. Programming isn&apos;t just my
-                                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
+                                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
+                                applications
                             </p>
                         </div>
                     </div>
