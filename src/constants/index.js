@@ -145,7 +145,7 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
         cubePosition: isSmall ? [3, -7, 0] : isMobile ? [5.5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
         reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 2, 0],
         ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-12, 10, 0] : isTablet ? [-10, 10, 10] : [-24, 11.5, 0],
-        targetPosition: isSmall ? [-5, -11, -10] : isMobile ? [-9, -11, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
+        targetPosition: isSmall ? [-5, -10.8, -10] : isMobile ? [-9, -11, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
 
     };
 };
